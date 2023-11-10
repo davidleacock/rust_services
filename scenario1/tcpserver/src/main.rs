@@ -10,7 +10,7 @@ fn main() {
 
     for stream in connection_listener.incoming() {
         let mut stream = stream.unwrap();
-        println!("Connection established");
+        println!("Connection established.");
 
         let mut buffer = [0; 1024];
         stream.read(&mut buffer).unwrap();
